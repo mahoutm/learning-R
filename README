@@ -5,8 +5,11 @@ R Analysis Examples
 
 How to change java heap size ?
 Add below option into R config-file : $R_HOME/etc/Rprofile.site
+----------
 options(java.parameters = c("-Xmx16g","-Dfile.encoding=UTF-8"))
 
+
 How to read UTF-8 type ?
+----------
 f <- file("d:/parser.txt", blocking=F,encoding="UTF-8")
 txtLines <- readLines(f)
