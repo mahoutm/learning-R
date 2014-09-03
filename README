@@ -13,3 +13,8 @@ How to read UTF-8 type ?
 ----------
 f <- file("d:/parser.txt", blocking=F,encoding="UTF-8")
 txtLines <- readLines(f)
+
+
+How to converts to UTF-8 for hangul
+----------
+Encoding(koala$contents) <- "UTF-8"
