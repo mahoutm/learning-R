@@ -18,3 +18,8 @@ txtLines <- readLines(f)
 How to converts to UTF-8 for hangul ?
 ----------
 Encoding(koala$contents) <- "UTF-8"
+
+
+for R-Studio on Mac
+----------
+system("defaults write org.R-project.R force.LANG en_US.UTF-8")
