@@ -16,6 +16,8 @@ lion <- sqldf("select income,work from fox group by income,work")
 # reckon to income:people and work:products(bought)
 lion <- split(lion$work,lion$income)
 koala <- as(lion, "transactions")
+# histogram
+itemFrequencyPlot(koala)
 cat <- apriori(koala,parameter = list(support = 0.5, confidence = 0.7))
 # Visualization
 plot(cat)
